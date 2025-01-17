@@ -1,0 +1,26 @@
+@import "global.css";
+
+.about-section__title {
+    font-family: "Permanent Marker";
+    color: var(--section-name-accent-color);
+    font-size: 16px;
+
+}
+
+.about-section__subtitle {
+    font-family: "Rubik, sans-serif";
+    color: var(--about-subtitle-text-color);
+    font-size: 38px;
+}
+
+.about-section__description {
+    font-family: --font-family-primary;
+    color: var(--about-description-text-color);
+    font-size: 20px;
+}
+
+.about-section__details {
+    font-family: --font-family-primary;
+    color: var(--about-details-text-color);
+    font-size: 17px;
+}
