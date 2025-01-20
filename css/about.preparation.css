@@ -24,3 +24,11 @@
     color: var(--about-details-text-color);
     font-size: 17px;
 }
+@media(min-width:600px){
+    .about-section{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
