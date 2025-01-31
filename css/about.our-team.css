@@ -1,33 +1,77 @@
 @import "global.css";
-.team-section{
-    background-image: url(/img/about-page-photo/about-our-team-background-color.jpg);
-    padding-top: 90px;
-    padding-bottom: 90px;
+.team-section {
+  background-image: url(/img/about-page-photo/about-our-team-background-color.jpg);
+  justify-content: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .team-section__title {
-    font-family: var(--accent-font);
-    color: var(--section-name-accent-color);
-    font-size: 16px;
-
+  font-family: var(--accent-font);
+  color: var(--section-name-accent-color);
+  font-size: 16px;
 }
 
 .team-section__subtitle {
-    font-family: var(--block-title-font);
-    color: var(--about-subtitle-text-color);
-    font-size: 38px;
-    margin-top: 20px;
+  font-family: var(--block-title-font);
+  color: var(--about-subtitle-text-color);
+  font-size: 38px;
+  margin-top: 20px;
 }
 
 .team-section__description {
-    font-family: var(--font-family-primary);
-    color: var(--about-description-text-color);
-    font-size: 20px;
-    margin-top: 25px;
+  font-family: var(--font-family-primary);
+  color: var(--about-description-text-color);
+  font-size: 20px;
+  margin-top: 25px;
 }
 
 .team-section__details {
-    font-family: var(--font-family-primary);
-    color: var(--about-details-text-color);
-    font-size: 17px;
-    margin-top: 25px;
+  font-family: var(--font-family-primary);
+  color: var(--about-details-text-color);
+  font-size: 17px;
+  margin-top: 25px;
+}
+.team-section__intro, .team-section__carousel{
+    margin: 15px;
+}
+.carousel__image-wrapper{
+    padding: 15px;
+}
+.carousel__image{
+    border-radius: 5px;;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .carousel__track {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .team-section {
+    display: flex;
+    flex-direction: row;
+
+    .team-section__intro,
+    .team-section__details {
+      flex: 33% 67%;
+    }
+  }
+
+  .carousel__track {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* .about-section__image {
+      height: 100%;
+      object-fit: cover;
+    } */
 }
