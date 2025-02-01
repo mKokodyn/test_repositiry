@@ -33,14 +33,27 @@
   font-size: 17px;
   margin-top: 25px;
 }
-.team-section__intro, .team-section__carousel{
-    margin: 15px;
+.team-section__intro,
+.team-section__carousel {
+  margin: 15px;
 }
-.carousel__image-wrapper{
-    padding: 15px;
+.carousel__image-wrapper {
+  padding: 15px;
 }
-.carousel__image{
-    border-radius: 5px;;
+.carousel__image {
+  border-radius: 5px;
+}
+.carousel__name {
+  margin-top: 20px;
+  color: var(--about-subtitle-text-color);
+  font-size: 24px;
+  font-family: var(--font-family-primary);
+}
+.carousel__role {
+  margin-top: 25px;
+  color: var(--about-details-text-color);
+  font-size: 17px;
+  font-family: var(--font-family-primary);
 }
 
 @media (min-width: 768px) {
