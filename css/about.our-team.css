@@ -33,9 +33,13 @@
   font-size: 17px;
   margin-top: 25px;
 }
-.team-section__intro,
+.team-section__intro{
+  margin: 15px;
+}
 .team-section__carousel {
   margin: 15px;
+  display: grid;
+  grid-template-columns: 32px 1fr 32px;
 }
 .carousel__image-wrapper {
   padding: 15px;

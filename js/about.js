@@ -1,5 +1,5 @@
 function init() {
-    import('...js');
+    import('./js/about.our-team.team-member.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
