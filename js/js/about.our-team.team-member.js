@@ -32,10 +32,10 @@ const teamMembersArray = [
   },
 ];
 
-function renderTeamMembers(teamMembers){
+function renderTeamMembers(teamMembers) {
   let teamMembersHTML = "";
-    for(const member of teamMembers){
-      teamMembersHTML += `<article class="carousel__item">
+  for (const member of teamMembers) {
+    teamMembersHTML += `<article class="carousel__item">
           <div class="carousel__image-wrapper">
             <img class="carousel__image" width="250"
               src="${member.imageSource}"
@@ -45,10 +45,9 @@ function renderTeamMembers(teamMembers){
           <h5 class="carousel__role">${member.role}</h5>
         </article>`;
 
-        break;
-    }
-    const teamMembersContainer = document.querySelector(".carousel__track");
-    teamMembersContainer.innerHTML = teamMembersHTML;
+    // break;
+  }
+  const teamMembersContainer = document.querySelector(".carousel__track");
+  teamMembersContainer.innerHTML = teamMembersHTML;
 }
 renderTeamMembers(teamMembersArray);
-

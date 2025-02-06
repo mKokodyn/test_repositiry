@@ -1,0 +1,10 @@
+.our-team-carousel{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+}
+.our-team-carousel__slides-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
